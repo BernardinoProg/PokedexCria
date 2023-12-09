@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex Cria</title>
+    <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/601px-Pokebola-pokeball-png-0.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div id="pokedeximagetitle" class="pokemon-title-image">
+        <h1>Pokedex Cria</h1>
+    </div>
+        <div id="content">
+            <div id="pokemonListContainer">
+            <button class = "show" onclick="showPokemonByIdPrompt()">Procurar por ID</button>
+            <ul id="ListaPokemons" class="pokemon-list"></ul>
+            </div>
+            <div id="bottomContainer">
+                <div id="pokemoncImg" class="pokemon-Img">
+                    <h3>Time</h3>
+                </div>
+                <div id="pokemonDetails" class="pokemon-details"></div>
+                <div id="capturedList" class="captured-list">
+                    <ul id="capturedPokemonList" class="captured-pokemon-list"></ul>
+                
+                </div>
+            </div>
+        </div>
+
+    
+        <div id="pokemonModal" class="modal">
+            <div class="modal-content">
+                <button class="close" onclick="closeModal()">Sair</button>        
+    <div id="modalContent">
+        <h2 id="pokemonName"></h2>
+        <img id="pokemonImage" src="" alt="Imagem do Pokémon">
+        <div id="pokemonType"></div>
+        <button id="addToTeamButton">Capturar</button>
+    </div>
+
+                
+                <div id="modalContent"></div>
+            </div>
+        </div>
+</body>
+</html>
